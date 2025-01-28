@@ -4,6 +4,7 @@ describe('Página de cadastro', () => {
     cy.intercept('POST', 'https://adopet-frontend-cypress.vercel.app/' ,{
       statusCode:400, }).as('stub post ')
   })
+  
     it('Deve preencher os campos do formulário de forma incorreta', () => {
       cy.get('[data-test="register-button"]').click();
       cy.get('[data-test="submit-button"]').click();
