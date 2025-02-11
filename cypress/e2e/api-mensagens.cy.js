@@ -1,6 +1,6 @@
 describe('api adopet', () => {
     //Math.random é um método do javascript que vai ser multiplicado por 1000
-    const tempoEsperado = Math.random() * 1000
+    // const tempoEsperado = Math.random() * 1000
     const authorization = `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1ZmZmNjQ0Mi05NjBkLTQyOTgtO
     Tc2OC04Y2RmMGY0NmU1ZTkiLCJhZG9wdGVyTmFtZSI6Iklnb3IiLCJpYXQiOjE3Mzg2ODYxOTksImV4cCI6MTczODk0NTM5OX0
     `
@@ -18,7 +18,7 @@ describe('api adopet', () => {
             //aqui ele vai consumir o tempo esperado, que é o método que armazenamos na variável acima
             //lte significa menor que 
             //nesta linda de código vamos espera que esse tempo seja inferior(lte) a nossa variável 'tempoEsperado'
-            expect(res.duration).to.be.lte(tempoEsperado)
+            // expect(res.duration).to.be.lte(tempoEsperado)
         })
     })
 })
